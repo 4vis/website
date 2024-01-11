@@ -72,15 +72,17 @@ a, .btn{
 /*Navigation*/
 nav, .links-nav{
     display: flex;
-    text-align: center  ;
+    text-align: center ;
+    margin-top: 10px;
 
 }
 
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    
 }
+
 
 .links-nav{
     gap: 2rem;

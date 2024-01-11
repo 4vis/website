@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px){
     #profile{
         height: 83vh;
-        margin-bottom: 6rem;
+        
     }
     
 }
@@ -19,44 +19,46 @@
     .greeting{
         
         display: flex;
-        flex-direction: column;
-        height: 83vh;
+        text-wrap: balance;
         width: 100%;
+        height: auto;
+        
         
         margin-left: 30px;
-        padding-right: 30px;
+        justify-content: center;
+        
         
     }
     .p1,.p2,.p3,.p4{
-        width: 45vh;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        display: block;
         text-align: left;
-        margin-right: 900;
+        
         
         
 
     }
     #hamburg{
-        display: flex;;
-        justify-content: right;
-        margin-right: 50px;
-        margin-bottom: 50px;
+        display: flex;
         
         
+        
+        
+        
+    }
+    #hamburg-menu{
+        display: block;
     }
     #profile,.section-container{
         display: block;
-        height: 83vh;
+        
         align-items: center;
-        justify-content: center;
-        margin-top: 20px;
+        
+        
         
 
     }
-    section,.section-container{
-        height: fit-content;
-    }
+ 
     section{
         margin:0 5%;
     }

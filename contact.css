@@ -19,40 +19,6 @@ body{
     height: 100vh;
     color: white;
 }
-.p1,.p2,.p3,.p4{
-    margin-top: 20px;
-    color: grey;
-    font-size: 23px;
-    
-    text-align: left;
-    margin-right: 375px;
-        
-}
-
-
-
-.greeting{
-
-    margin-top: 300px;
-    
-    flex-direction: column;
-    margin-left: 475px;
-    text-align: center;
-    margin-right: 500px;
-   
-}
-
-.greeting h1{
-    font-weight: 400;
-    display: inline;
-    color: grey;
-    justify-content: center;
-}
-
-.greeting__name{
-    color: white;
-
-}
 
 
 html{
@@ -70,17 +36,24 @@ a, .btn{
 }
 
 /*Navigation*/
+a, .btn{
+    transition: all 500ms ease;
+}
+
+/*Navigation*/
 nav, .links-nav{
     display: flex;
-    text-align: center  ;
+    text-align: center ;
+    margin-top: 10px;
 
 }
 
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    
 }
+
 
 .links-nav{
     gap: 2rem;
@@ -190,68 +163,75 @@ a:hover{
     transform: none;
 }
 
-/*section*/
-
-
-
-section{
-    padding-top: 4vh;
-    height: 96vh;
-    
-    box-sizing: border-box;
-    min-height: fit-content;
-    align-items: left;
-    justify-content: left;
-}
-
-.section-container{
-    display: flex;
-    align-items: center;
-}    
 
 /*profile*/
 
-#profile{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
 
-}
-
-.section__pic-container{
-    display: block;
-    height: 300px;
-    width: 300px;
-    margin: auto 0;
-    border-radius: 50%;
-    border: 10px solid black;
-    clip-path: circle();
-}
 
 
 
 .section__text{
-   
-    text-align: left;
+    display: flex;
+    width: auto;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 40px;
+    
+}
+
+.input-fields{
+    display: flex;
+    height: fit-content;
+    width: auto;
+    margin-left: 20%;
+    
+    
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+form{
+    background:black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    
+    border-radius: 10px;
+    gap: 0.5rem;
+}
 
+textarea{
+    display: flex;
+    width: 100%;
 }
 
 
-
+.ndt{
+    display: flex;
+    color: grey;
+    width: 100%;
+    
+    
+    
+    
+}
 .section__text__p2{
     font-size: 1.75rem;
     color: grey;
     font-weight: 500;
     height: 50px;
+    width: 100%;
     line-height: 50px;
     overflow: hidden;
-    display: inline-flex;
-    margin-left: 10;
+    display: flex;
+    
+    
+    
+    
  
 
 }
