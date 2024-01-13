@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    height: fit-content;
 
 }
 
@@ -16,8 +17,10 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: black;
-    height: 100vh;
+    height: fit-content;
     color: white;
+    width: 100%;
+
 }
 
 
@@ -45,6 +48,7 @@ nav, .links-nav{
     display: flex;
     text-align: center ;
     margin-top: 10px;
+    gap: 0 rem;
 
 }
 
@@ -53,6 +57,9 @@ nav{
     align-items: center;
     
 }
+
+
+
 
 
 .links-nav{
@@ -99,7 +106,7 @@ a:hover{
 }
 
 .hamburg-icon span{
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: white;
     transition: all 0.3 ease-in-out ;
@@ -172,43 +179,122 @@ a:hover{
 
 .section__text{
     display: flex;
-    width: auto;
+    width: 100%;
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    margin-left: 20%;
+    
     margin-top: 40px;
     
 }
-
 .input-fields{
-    display: flex;
-    height: fit-content;
-    width: auto;
-    margin-left: 20%;
-    
-    
-    height: 100vh;
-    justify-content: center;
-    
+    display: block;
+    align-content: center;
+    margin-left: 1000px;
+
 }
 
+
+
+.section__text{
+
+    margin-left: 500px;
+}
+
+
+.horzline{
+    width: 360px;
+    height: 1px;
+    background-color: grey;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 500px ;
+    opacity: 10%;
+}
+
+
 form{
+    margin-left: 500px;
     background:black;
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
-    width: 100%;
+    margin-top: 1.5rem;
     
     border-radius: 10px;
     gap: 0.5rem;
 }
 
-textarea{
-    display: flex;
-    width: 100%;
+
+.submit{
+    border-radius: 10px;
+    width: 54em;
+    height: 30px;
+    outline: none;
+    border: 2px solid transparent;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s;
+    
 }
 
+.submit:hover{
+    cursor: pointer;
+    background-color: rgb(221, 220, 217);
+
+}
+
+textarea{
+    display: flex;
+    width: 100px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    transition:  all 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+textarea:hover{
+    cursor: pointer;
+    background-color: rgb(20, 20, 20); 
+}
+
+textarea:focus{
+    cursor: text;
+    
+}
+
+
+
+
+input{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 16px;
+    padding: 1rem;
+    line-height: 1.4;
+    
+
+}
+
+input:hover{
+    cursor: pointer;
+    background-color:rgb(20, 20, 20);  ;
+}
+
+input:focus{
+    cursor: text;
+    
+}
 
 .ndt{
     display: flex;
